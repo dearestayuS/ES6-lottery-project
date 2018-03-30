@@ -1,0 +1,11 @@
+任务：
+文件的合并、脚本的编译、模板的自动更新等
+1、util->args.js：处理命令行参数（命令行有哪些参数、参数类型、默认值等），注意：要在最后加上export default args，否则该js不会起作用
+2、scripts.js：创建js编译任务，即如何对项目中js的处理（将es6写的js代码，通过gulpWebpack中的babel编译为es5，并压缩保存到相应server目录）
+3、pages.js：创建.ejs（即页面展示部分，html）编译任务，将该文件直接拷贝到server中
+4、css.js：创建css编译任务，将该文件直接拷贝到server/public中
+5、server.js：创建服务器编译任务（启动服务器、监听服务器文件的更改、重启服务器）
+6、browser.js：创建监听任务，如果处于监听状态，js改变则调用scripts.js，.ejs改变则调用pages.js，css改变则调用css.js
+7、clean.js：清空指定目录。在每一次开发环境下的js拷贝到服务器之前，都将服务器中的指定目录清空
+8、default.js：建立一个默认任务，在命令行输入gulp，并在其后不跟任何任务名称时，调用default任务
+9、built.js：设定任务的执行顺序

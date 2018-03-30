@@ -1,0 +1,3 @@
+放置前端代码
+js->class：放置类文件
+view->.ejs：使用.ejs文件是由于服务器的代码使用express来做，而其模板引擎为.ejs

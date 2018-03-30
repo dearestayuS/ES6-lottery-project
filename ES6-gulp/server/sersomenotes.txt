@@ -1,0 +1,8 @@
+服务器模块
+1、在使用express前，先安装node.js安装包
+2、安装express：npm i express -g（全局安装）
+3、在express安装完成以后，还需要安装express-generator，这时敲入命令才不会出错：npm i express-generator -g
+4、在当前目录下：express -e .（表示当前目录使用ejs模板引擎）
+5、npm install：完成安装
+6、express框架搭建的服务器默认为3000端口
+7、在app.js中固定位置加入app.use(require('connect-livereload')());

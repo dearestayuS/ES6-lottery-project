@@ -1,0 +1,4 @@
+1、package.json：安装npm包，必需依赖，可以使用npm install XXX --save-del
+2、.babelrc：文件名不能更改，babel在编译时，会找到该文件，type nul>.babelrc
+3、gulpfile.babel.js：文件名不能更改，使用es6语法需要在中间加入.babel，作用是将指定目录下的所有文件放入此中运行（命令行中输入gulp，会直接找到该文件）
+4、在windows环境下，如果安装包的过程中提示错误信息：operation not permitted，则表示没有权限，解决办法有（1）以管理员身份运行cmd（2）删除C:\Users\{账户}\下的.npmrc文件
